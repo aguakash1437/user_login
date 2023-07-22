@@ -1,0 +1,36 @@
+{% extends 'dummy.html' %}
+{% block title %}
+    <title>display_profile</title>
+{% endblock %}
+
+{% block body_block %}
+<style>
+    body{
+        background-image: url('https://e0.pxfuel.com/wallpapers/103/48/desktop-wallpaper-night-sky-stars-midnight-sky-night-sky-night-sky-with-stars.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }h1{
+        color: ghostwhite;
+    }img{
+        border-radius: 50px;
+    }fieldset{
+        width: max-content;
+        background-image: url('https://w0.peakpx.com/wallpaper/25/799/HD-wallpaper-midnight-blues-stars-islands-ocean-midnight-sky-clouds-tree-moon-flowers-blues.jpg');
+        background-repeat:no-repeat;
+        background-size: cover;
+    
+    }
+</style>
+<center>   
+    <fieldset> 
+    <h1>username is {{uo.username}}</h1>
+    <h1>Email of user is {{uo.email}}</h1>
+    <h1>Address of user is {{po.address}}</h1>
+    <h1>Profile_pic of user is </h1>
+    <img src="{{po.profile_pic.url}}" alt="No Image" height="300px" width="300px">
+</fieldset>
+</center>
+
+{% endblock %}
+
+   
